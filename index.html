@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hynt Beauty">
+    <meta name="author" content="hynt beauty">
+    <link rel="shortcut icon" href="./images/form.png" type="image/x-icon">
+    <title> Deep Hynt Beauty</title>
+    <link rel="shortcut icon" href="./images/Hynt Beauty Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid desktop">
+            <div class="col-12 header-title text-center justify-content-center align-items-center">
+                <p>FREE SHIPPING ON US ORDERS OF $35 OR MORE | FREE INTERNATIONAL SHIPPING ON ORDERS OF $129 OR MORE.
+                    <span class="font-weight-bold ">LET'S GO SHOPPING</span>
+                </p>
+            </div>
+            <div class="container-fluid">
+                <div class="container mh-88 pt-3 pb-3 bg-white">
+                    <div class="row d-flex flex-row p-3 justify-content-center align-items-center">
+                        <div class="col-auto logo">
+                            <img src="./images/Hynt Beauty Logo1.svg" alt="hynt-beauty-logo" class="w-100 h-100">
+                        </div>
+
+                        <nav class="navbar col header-link">
+                            <ul class="navbar-nav d-flex flex-row justify-content-around flex-grow-1">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> BEST SELLERS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FACE </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">EYES </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">LIPS </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SKINCARE </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">BRUSHES </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SAMPLES </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">SETS </a>
+                                </li>
+                                <li class="nav-item dropdown nav-li">
+                                    <a class="nav-link dropdown-toggle show" href="#" aria-expanded="false"
+                                    data-bs-toggle="dropdown">ABOUT US</a>
+                                    <ul class="dropdown-menu position-absolute pt-2 pb-2 show">
+                                        <li><a href="#" class="dropdown-item">Our Story </a></li>
+                                        <li><a href="#" class="dropdown-item">Our Commitment </a></li>
+                                        <li><a href="#" class="dropdown-item"> Ingredients </a></li>
+                                        <li><a href="#" class="dropdown-item"> Blog </a></li>
+                                        <li><a href="#" class="dropdown-item"> Press</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="col-auto header-icon d-flex flex-row justify-content-end">
+                            <a href="#"><img src="./images/search icon.svg" alt="search"></a>
+                            <a href="#"><img src="./images/Account icon.svg" alt="Account"></a>
+                            <a href="#"><img src="./images/Bag icon.svg" alt="bag"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mobile">
+            <div class="col-12 header-title text-center justify-content-center align-items-center">
+                <p>FREE SHIPPING ON US ORDERS OF $35 OR MORE | FREE INTERNATIONAL SHIPPING ON ORDERS OF $129 OR MORE.
+                    <span class="font-weight-bold ">LET'S GO SHOPPING</span>
+                </p>
+            </div>
+            <div class="container-fluid ">
+                <div class="container">
+                    <div class="row d-flex flex-row p-3 justify-content-center align-items-center">
+                        <div class="col-4 d-flex justify-content-start ">
+                            <div class="header-icon d-flex flex-row align-items-center">
+                                <a href="#" onclick="toggleNav()" id="menu-icon-link">
+                                    <img src="./images/7124209_menu_icon.svg" alt="#" class="d-block"
+                                        id="menu-icon-mobile">
+                                    <img src="./images/cross.svg" class="d-none" id="cancel-icon" alt="#">
+                                </a>
+                            </div>
+                            <div class="col header-icon">
+                                <a href="#">
+                                    <img src="./images/Account icon.svg" alt="Account">
+                                </a>
+                            </div>
+                        </div>
+
+                        <nav class="navbar pt-3" id="mobileNav"
+                            style="top: 100%; left: 0; width: 100%; background-color: #fff; display: none;">
+                            <ul class="px-4">
+                                <li class="pt-2 pb-1"><a href="#">BEST SELLERS</a></li>
+                                <li class="pt-2 pb-1"><a href="#">FACE</a></li>
+                                <li class="pt-2 pb-1"><a href="#">LIPS</a></li>
+                                <li class="pt-2 pb-1"><a href="#">SKINCARE</a></li>
+                                <li class="pt-2 pb-1"><a href="#">BRUSHES</a></li>
+                                <li class="pt-2 pb-1"><a href="#">SAMPLES</a></li>
+                                <li class="pt-2 pb-1"><a href="#">SETS</a></li>
+                                <li class="pt-2 pb-3"><a href="#">ABOUT US</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="col-4 logo_img  px-1 align-items-center">
+                            <div class="col-auto logo text-center">
+                                <img src="./images/Hynt Beauty Logo1.svg" alt="hynt-beauty-logo" class="w-100 h-100">
+                            </div>
+                        </div>
+
+                        <div class="col-4 header-icon d-flex flex-row justify-content-end">
+                            <a href="#"><img src="./images/search icon.svg" alt="search"></a>
+                            <a href="#"><img src="./images/Bag icon.svg" alt="bag"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
