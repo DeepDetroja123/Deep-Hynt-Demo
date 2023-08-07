@@ -4527,6 +4527,7 @@ tbody.collapse.show {
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
+  margin-top: -3px;
 }
 
 .navbar-text {
