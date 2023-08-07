@@ -114,6 +114,11 @@ ul li {
     width: 87%;
     background-color: #fff;
     display: none;
+    z-index: 1;
+    padding: 0;
+}
+#mobileNav ul {
+    width: 100%;
 }
 
 .nav-item ul li:hover a {
