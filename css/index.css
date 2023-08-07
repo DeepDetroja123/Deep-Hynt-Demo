@@ -167,7 +167,7 @@ ul li {
 #ul{
     margin-top: 30px;
     border: none;
-    margin-left: -20px;
+    margin-left: -30px;
 }
 #ul li a{
     background-color: transparent;
@@ -210,10 +210,12 @@ ul li {
     min-height: 40.07vw;
 }
 .h2-font{
+    font-size: 42px;
     font-family: var(--font-family-bodonimoda);
     font-weight: 600;
     font-style: italic;
     padding-bottom: 15px;
+    margin-left: 40px;
 }
 .btn-hover:hover{
     color: var(--copper);
@@ -227,7 +229,7 @@ ul li {
     position: static;
 }
 #megamenu img{
-    width: 73%;
+    width: 100%;
 }
 #megamenu .dropdown-menu .row .col-20:first-child img{
  margin-left: 100px;  
@@ -239,9 +241,21 @@ ul li {
     font-size: 0.845rem;
     line-height: 1.428;
 }
-.col-width p:hover{
+.col-width a:hover{
     color: var(--copper);
 }
+#megamenu .row{
+    max-width: 1180px;
+}
+.row  .col-width a p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+.guuter{
+    margin: 0 -15px;
+}
+
 
 
 @media (min-width: 576px) {
@@ -327,7 +341,7 @@ ul li {
         min-height: inherit;
         text-align: left;
         min-height: 40.07vw;
-        max-width: 500px;
+        max-width: 565px;
     }
     .banner {
         min-height: 40.07vw;
