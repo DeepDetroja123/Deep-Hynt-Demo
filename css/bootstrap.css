@@ -39,6 +39,8 @@
   --black-200: #383838;
   --black-300: #555555;
   --black-400: #717171;
+  --menu-bg-color:#FAF4F0;
+  --mob-text-bg-color :#FFF2EA;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -98,7 +100,9 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
-
+.desktop{
+  position: relative;
+}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -286,7 +290,9 @@ label {
 .bg-secondary-sale{
   background-color: var(--sale-price);
 }
-
+.bg-menu-color{
+  background-color: var(--menu-bg-color);
+}
 
 
 button {
@@ -673,7 +679,7 @@ pre code {
 
   h1, .h1 {
     font-size: 2.625rem;
-    line-height: 1.38;
+    line-height: 1.381;
   }
 
   h2, .h2 {
@@ -919,6 +925,10 @@ pre code {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+.col-width{
+  width: calc(100%/5);
 }
 
 .order-first {
@@ -2967,7 +2977,7 @@ fieldset:disabled a.btn {
   padding: 16px 25px;
   color: var(--black);
   background-color: var(--white);
-  border: 1px solid var(--black);
+
 }
 
 .btn-secondary:hover{
@@ -4363,7 +4373,7 @@ tbody.collapse.show {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
 }
 
 .nav-link:hover,
@@ -4451,7 +4461,7 @@ tbody.collapse.show {
 }
 
 .navbar {
-  position: relative;
+  position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6801,7 +6811,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 .bg-badge{
-  background-color: #fafaf7;
+  background-color: var(--alabaster);
 }
 .bg-sale-price{
   color: var(--sale-price);

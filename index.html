@@ -6,7 +6,7 @@
     <meta name="description" content="Hynt Beauty">
     <meta name="author" content="hynt beauty">
     <link rel="shortcut icon" href="./images/form.png" type="image/x-icon">
-    <title> Deep Hynt Beauty</title>
+    <title> Hynt Beauty</title>
     <link rel="shortcut icon" href="./images/Hynt Beauty Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
@@ -23,7 +23,7 @@
                 </p>
             </div>
             <div class="container-fluid">
-                <div class="container mh-88 pt-3 pb-3 bg-white">
+                <div class="container mh-88 pb-3 bg-white">
                     <div class="row d-flex flex-row p-3 justify-content-center align-items-center">
                         <div class="col-auto logo">
                             <img src="./images/Hynt Beauty Logo1.svg" alt="hynt-beauty-logo" class="w-100 h-100">
@@ -34,8 +34,44 @@
                                 <li class="nav-item">
                                     <a href="#" class="nav-link"> BEST SELLERS</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">FACE </a>
+                                <li id="megamenu" class="nav-item dropdown" >
+                                    <a class="nav-link dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" >FACE </a>
+                                    <div class="dropdown-menu mega position-absolute w-100 bg-badge">
+                                        <div class="container" id="megamenu-item">
+                                            <div class="text-center d-flex flex-column align-items-center">
+                                                <div class="col-12 pt-4">
+                                                    <h5>Face Best Sellers</h5>
+                                                </div>
+                                                <div class="row d-flex flex-row">
+                                                    <div class="col-width">
+                                                        <img src="./images/powderblush.png" alt="#" >
+                                                        <p style="margin-left: 50px;">ALTO Matte Powder Blush</p>
+                                                    </div>
+                                                    <div class="col-width">
+                                                        <img src="./images/finishpowder.png" alt="">
+                                                        <p>VELLUTO Pure Foundation</p>
+                                                    </div>
+                                                    <div class="col-width">
+                                                        <img src="./images/EncoreFinePressedPowder.png" alt="">
+                                                        <p>ENCORE Fine Pressed Powder</p>
+                                                    </div>
+                                                    <div class="col-width">
+                                                        <img src="./images/finishpowder.png" alt="">
+                                                        <p>LUMIERE Radiance Boosting Powder</p>
+                                                    </div>
+                                                    <div class="col-width">
+                                                        <img src="./images/powderblush.png" alt="#" >
+                                                        <p>FINALE Finishing Powder</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pt-4 pb-5">
+                                                    <a href="#" class="btn btn-link  bg-alabaster border-dark">
+                                                            SHOP ALL
+                                                        </button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">EYES </a>
@@ -56,9 +92,9 @@
                                     <a class="nav-link" href="#">SETS </a>
                                 </li>
                                 <li class="nav-item dropdown nav-li">
-                                    <a class="nav-link dropdown-toggle show" href="#" aria-expanded="false"
-                                    data-bs-toggle="dropdown">ABOUT US</a>
-                                    <ul class="dropdown-menu position-absolute pt-2 pb-2 show">
+                                    <a class="nav-link dropdown-toggle" href="#" aria-expanded="false"
+                                        data-bs-toggle="dropdown">ABOUT US</a>
+                                    <ul class="dropdown-menu position-absolute pt-2 pb-2">
                                         <li><a href="#" class="dropdown-item">Our Story </a></li>
                                         <li><a href="#" class="dropdown-item">Our Commitment </a></li>
                                         <li><a href="#" class="dropdown-item"> Ingredients </a></li>
@@ -86,32 +122,39 @@
             <div class="container-fluid ">
                 <div class="container">
                     <div class="row d-flex flex-row p-3 justify-content-center align-items-center">
-                        <div class="col-4 d-flex justify-content-start ">
+                        <div class="col-4 d-flex justify-content-start col">
                             <div class="header-icon d-flex flex-row align-items-center">
                                 <a href="#" onclick="toggleNav()" id="menu-icon-link">
-                                    <img src="./images/7124209_menu_icon.svg" alt="#" class="d-block"
-                                        id="menu-icon-mobile">
+                                    <img src="./images/hemburg-icon.svg" alt="#" class="d-block" id="menu-icon-mobile"
+                                        style="margin-left: -20px; width: 200%;">
                                     <img src="./images/cross.svg" class="d-none" id="cancel-icon" alt="#">
                                 </a>
                             </div>
                             <div class="col header-icon">
                                 <a href="#">
-                                    <img src="./images/Account icon.svg" alt="Account">
+                                    <img src="./images/Account icon.svg" alt="Account" style="margin-left: -15px;">
                                 </a>
                             </div>
                         </div>
 
-                        <nav class="navbar pt-3" id="mobileNav"
-                            style="top: 100%; left: 0; width: 100%; background-color: #fff; display: none;">
+                        <nav class="navbar pt-3" id="mobileNav">
                             <ul class="px-4">
-                                <li class="pt-2 pb-1"><a href="#">BEST SELLERS</a></li>
-                                <li class="pt-2 pb-1"><a href="#">FACE</a></li>
-                                <li class="pt-2 pb-1"><a href="#">LIPS</a></li>
-                                <li class="pt-2 pb-1"><a href="#">SKINCARE</a></li>
-                                <li class="pt-2 pb-1"><a href="#">BRUSHES</a></li>
-                                <li class="pt-2 pb-1"><a href="#">SAMPLES</a></li>
-                                <li class="pt-2 pb-1"><a href="#">SETS</a></li>
-                                <li class="pt-2 pb-3"><a href="#">ABOUT US</a></li>
+                                <li class="pt-2 pb-1 nav-item"><a href="#">BEST SELLERS</a></li>
+                                <li class="pt-2 pb-1 nav-item"><a href="#">FACE</a></li>
+                                <li class="pt-2 pb-1 nav-item"><a href="#">LIPS</a></li>
+                                <li class="pt-2 pb-1 nav-item"><a href="#">SKINCARE</a></li>
+                                <li class="pt-2 pb-1 nav-item"><a href="#">BRUSHES</a></li>
+                                <li class="pt-2 pb-1 nav-item"><a href="#">SAMPLES</a></li>
+                                <li class="pt-2 pb-1 nav-item"><a href="#">SETS</a></li>
+                            </ul>
+                            <ul class="bg-menu-color px-4 mb-0 mob-nav-font pt-5">
+                                <li class="pt-0 pb-1"><a href="#">Our Story</a></li>
+                                <li class="pt-0 pb-1"><a href="#">Our Commitment</a></li>
+                                <li class="pt-0 pb-1"><a href="#">Ingredients</a></li>
+                                <li class="pt-0 pb-1"><a href="#">Help & FAQs</a></li>
+                                <li class="pt-0 pb-1"><a href="#">Contact Us </a></li>
+                                <li class="pt-0 pb-1"><a href="#">Loyalty Program</a></li>
+                                <li class="pt-0 pb-5"><a href="#">Store Locator</a></li>
                             </ul>
                         </nav>
 
@@ -121,7 +164,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4 header-icon d-flex flex-row justify-content-end">
+                        <div class="col-4 header-icon d-flex flex-row justify-content-end right-icon">
                             <a href="#"><img src="./images/search icon.svg" alt="search"></a>
                             <a href="#"><img src="./images/Bag icon.svg" alt="bag"></a>
                         </div>
@@ -130,6 +173,31 @@
             </div>
         </div>
     </header>
+
+
+    <div class="container-fluid">
+
+        <section class="banner">
+            <div class="container">
+                <div class="wrap-image">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="./images/Hynt_2b.png" />
+                        <img src="./images/Hynt_2b_mob.png" alt="banner-image" class="h-100 w-100" />
+                    </picture>
+                </div>
+
+                <div class="wrap-text">
+                    <h1>Nature inspired colors.</h1>
+                    <h2 class="h2-font"> Science powered formulas.</h2>
+                    <p style="letter-spacing: 0px;">
+                        Our products are formulated with state-of-the-art, naturally-derived ingredients that are
+                        healthy for your skin and conscientious of our planet.
+                    </p>
+                    <!-- <a href="#"><button class="btn btn-secondary btn-hover">Shop Now</button></a> -->
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="./js/index.js"></script>
 </body>
