@@ -293,6 +293,9 @@ label {
 .bg-menu-color{
   background-color: var(--menu-bg-color);
 }
+.bg-color-order{
+  background-color: var(--almonds);
+}
 
 
 button {
