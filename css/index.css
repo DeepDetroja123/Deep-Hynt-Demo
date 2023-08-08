@@ -60,11 +60,6 @@ ul li {
     font-weight: 500;
 }
 
-
-/* .header-icon {
-    flex-grow: 1;
-} */
-
 .mobile {
     display: block;
 }
@@ -74,12 +69,12 @@ ul li {
 }
 
 .header-icon a img{
-    width: 23px;
-    height: 23px;
+    width: 24px;
+    height: 25px;
 }
 
 .header-icon a+a {
-    padding-left: 15px;
+    padding-left: 10px;
     margin-left: 5px;
 }
 
@@ -113,19 +108,22 @@ ul li {
 
 #mobileNav {
     position: absolute;
-    top: 12%;
-    left: 0;
+    top: 25%;
+    left: -100%;
     width: 87%;
     background-color: #fff;
-    display: none;
     z-index: 1;
     padding: 0;
+    transition: 0.3s;
 }
 #mobileNav ul {
     width: 100%;
 }
 .left-icon{
-    margin-right: -20px;
+    margin-left: -19px;
+}
+.left-icon div+div{
+    margin-left: 20px;
 }
 
 .nav-item ul li:hover a {
@@ -195,12 +193,12 @@ ul li {
     object-fit: cover;
 }
 .right-icon{
-    margin-left: 20px;
+    margin-left: 19px;
+    padding-right: 0;
 }
 .right-icon a+a{
-    margin-right: 2px;
+    margin-right: 1px;
 }
-
 
 .wrap-text {
     position: absolute;
@@ -219,7 +217,11 @@ ul li {
     font-weight: 600;
     font-style: italic;
     padding-bottom: 15px;
-    margin-left: 2px;
+    margin-left: 35px;
+}
+.btn-hover{
+   line-height: 2;
+
 }
 .btn-hover:hover{
     color: var(--copper);
@@ -269,14 +271,34 @@ ul li {
     font-weight: 500;
     /* padding: 3px 6px; */
 }
+.search-item p{
+    font-size: 30px;
+    font-family: var(--font-family-bodonimoda);
+    font-weight: 500;
+    line-height: 1.067;
+}
+.search-icon img{
+    width:  24px;
+    height: 24px;
+}
+.search-img img{
+    margin-top: 15px;
+}
+.search-bar {
+    margin-top: -5px;
+    width: 100%;
+    min-height: 150px;
+    background-color: var(--white);
+    z-index: 1;
+}
+#search-line{
+    max-width: 950px;
+}
 
 
 
 @media (min-width: 576px) {
-    .header-icon {
-        flex-grow: 0;
-    }
-
+  
     #mobileNav {
         display: none;
     }
@@ -285,10 +307,10 @@ ul li {
         margin: 0;
     }
     .header-icon #menu-icon-link {
-       margin-right: 50px;
+       margin-right: 25px;
     }
     .logo img{
-        margin-left: 30px;
+        margin-left: 55px;
     }
     .mobile .icons img{
         margin-left: -25px;
@@ -312,7 +334,7 @@ ul li {
         margin-left: 10px;
     }
     .logo img{
-        margin-left: 50px;
+        margin-left: 70px;
     }
 }
 
@@ -335,7 +357,7 @@ ul li {
         margin: 0 auto;
     }
     .logo img{
-        margin-left: 0;
+        margin-left: 0px;
     }
 
     .mobile {
@@ -359,6 +381,7 @@ ul li {
         text-align: left;
         min-height: 40.07vw;
         max-width: 565px;
+        top: -21px;
     }
     .banner {
         min-height: 40.07vw;
@@ -403,7 +426,7 @@ ul li {
     }
 
     .header-icon a+a {
-        margin-left: 30px;
+        margin-left: 26px;
         padding-left: 0px;
     }
     .nav-li ul li+li {
@@ -412,6 +435,9 @@ ul li {
 }
 @media (min-width: 1300px) {
     .header-link ul li+li{
-        margin-left: 32px;
+        margin-left: 35px;
+    }
+    .nav-li ul li+li {
+        margin: 0;
     }
 }
