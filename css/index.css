@@ -97,7 +97,6 @@ ul li {
     width: 100%;
 }
 
-
 .navbar .mob-nav-font li {
     font-size: 16px;
     line-height: 2.5;
@@ -108,7 +107,7 @@ ul li {
 
 #mobileNav {
     position: absolute;
-    top: 25%;
+    top: 96%;
     left: -100%;
     width: 87%;
     background-color: #fff;
@@ -294,14 +293,33 @@ ul li {
 #search-line{
     max-width: 950px;
 }
+#search-line .col-1 p{
+    margin-top: 10px;
+    margin-left: -15px;
+    font-size: 15px;
+    font-family: var(--font-family-karla);
+    font-weight: bold;
+    line-height: 1.73;
+    color: var(--copper);
+    margin-top: 15px;
+}
+#search-line .col> ::placeholder{
+    font-family: var(--font-family-karla);
+    font-size: 18px;
+    line-height: 1.44;
+}
+.aero a svg{
+    margin-top: 20px;
+}
+#d-search{
+    display: none;
+}
+
 
 
 
 @media (min-width: 576px) {
   
-    #mobileNav {
-        display: none;
-    }
 
     .nav-li ul li+li {
         margin: 0;
@@ -315,8 +333,11 @@ ul li {
     .mobile .icons img{
         margin-left: -25px;
     }
-    
+    #d-search{
+        display: none;
+    }
 }
+    
 
 @media (min-width:768px) {
     .header-title p {
@@ -333,8 +354,12 @@ ul li {
     #menu-icon-link a img+img{
         margin-left: 10px;
     }
+    
     .logo img{
         margin-left: 70px;
+    }
+    #d-search{
+        display: none;
     }
 }
 

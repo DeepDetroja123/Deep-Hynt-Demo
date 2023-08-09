@@ -116,9 +116,9 @@
                             </ul>
                         </nav>
                         <div class="col-auto header-icon d-flex flex-row justify-content-end">
-                            <a href="#" onclick="toggleNav()">
-                                <img src="./images/search.svg" alt="search" class="d-block" id="menu-icon-mobile">
-                                <img src="./images/close.svg" class="d-none" id="cancel-icon" alt="#">
+                            <a href="#" onclick="searchbox()">
+                                <img src="./images/search.svg" alt="search" class="d-block" id="search_icon">
+                                <img src="./images/close.svg" class="h-100 w-100 d-none" id="search-x" alt="#">
                             </a>
                             <!-- <a href=""><img src="./images/search.svg" alt="search" onclick="toggleNav()"></a> -->
                             <a href="#"><img src="./images/account.svg" alt="Account"></a>
@@ -187,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <div class="search-bar position-absolute">
+        <div class="search-bar position-absolute" id="d-search">
             <div class="container d-block" id="search-line">
                 <div class="text-center pb-5">
                     <div class="pt-2 pb-4 search-item">
@@ -203,8 +203,16 @@
                         <div class="col-1">
                             <p>SEARCH</p>
                         </div>
-                        <div class="search-icon">
-                            <img src="./images/arrow-right.svg" alt="aero">
+                        <div class="search-icon aero">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="12" viewBox="0 0 15 15"
+                                    style="enable-background:new 0 0 15 15;" xml:space="preserve">
+                                    <path id="arrow-right" transform="translate(-10.75 -8.045)" fill="#9b6145" d="M20.4,21.7c-0.1,0-0.2,0-0.3-0.1c-0.2-0.2-0.2-0.5-0.1-0.7l4.2-4.9
+	H11.3c-0.3,0-0.5-0.2-0.5-0.5S11,15,11.3,15h12.9L20,10.2C19.8,10,19.8,9.6,20,9.5c0.2-0.2,0.5-0.2,0.7,0.1l4.9,5.7
+	c0.1,0.1,0.1,0.2,0.1,0.3l0,0c0,0,0,0,0,0c0,0,0,0,0,0v0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0l0,0
+	c0,0.1,0,0.2-0.1,0.3l-4.9,5.7C20.6,21.7,20.5,21.7,20.4,21.7z" />
+                                </svg></a>
                         </div>
                     </div>
                 </div>

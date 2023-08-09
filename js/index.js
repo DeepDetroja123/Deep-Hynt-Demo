@@ -2,7 +2,7 @@ function toggleNav() {
     var before_class = document.getElementById("menu-icon-mobile");
     var after_class = document.getElementById("cancel-icon");
     var hidden_class = document.getElementById("mobileNav");
-    var hidden_ele_class = document.getElementById("search-line");
+
 
     if (before_class.classList.contains('d-block')) {
         before_class.classList.remove('d-block')
@@ -17,8 +17,8 @@ function toggleNav() {
     if (after_class.classList.contains('d-none')) {
         after_class.classList.remove('d-none');
         after_class.classList.add('d-block');
-        // hidden_ele_class.classList.remove('d-none');
-        // hidden_ele_class.classList.add('d-block');
+        // hidden_class.classList.remove('d-none');
+        // hidden_class.classList.add('d-block');
         hidden_class.style.left="0";
     }
     else {
@@ -58,3 +58,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 });
+
+function searchbox()
+{
+     var before=document.getElementById('d-search');
+    var after=document.getElementById('search-x');
+    var after1=document.getElementById('search_icon');
+     if(before.classList.contains('d-block'))
+         {
+            before.classList.remove('d-block')
+            before.classList.add('d-none');
+            after1.classList.remove('d-none');
+            after1.classList.add('d-block');
+         }
+         else {
+            before.classList.remove('d-none');
+            before.classList.add('d-block');
+            
+            after1.classList.remove('d-block')
+            after1.classList.add('d-none');
+         }
+         if(after.classList.contains('d-none'))
+         {
+             after.classList.remove('d-none');
+             after.classList.add('d-block');
+         }
+         else{
+             after.classList.remove('d-block');
+             after.classList.add('d-none');
+         }
+
+}
