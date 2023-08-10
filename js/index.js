@@ -56,34 +56,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function searchbox() {
-    var before = document.getElementById('d-search');
-    var after = document.getElementById('search-x');
-    var after1 = document.getElementById('search_icon');
-    var search_box =document.getElementById('d-search');
-
-    if (before.classList.contains('d-block')) {
-        before.classList.remove('d-block');
-        before.classList.add('d-none');
-        after1.classList.remove('d-none');
-        after1.classList.add('d-block');
-        search_box.style.top='-130%';
+    var dd=document.getElementById('dd2');
+    var searchBox = document.getElementById('d-search');
+    var searchCross = document.getElementById('search-x');
+    var searchIcon = document.getElementById('search_icon');
+     
+    if (searchIcon.classList.contains('d-block')) {
+        searchIcon.classList.remove('d-block');
+        searchIcon.classList.add('d-none');
+        searchCross.classList.remove('d-none');
+        searchCross.classList.add('d-block');
+        searchBox.style.top='135px';
       
     } else {
-        before.classList.remove('d-none');
-        before.classList.add('d-block');
-        after1.classList.remove('d-block');
-        after1.classList.add('d-none');
-      
-        search_box.style.top='130px';
+        searchIcon.classList.remove('d-none');
+        searchIcon.classList.add('d-block');
+        searchCross.classList.remove('d-block');
+        searchCross.classList.add('d-none');
+       searchBox.style.top='-150%';
       
     }
 
-    if (after.classList.contains('d-none')) {
-        after.classList.remove('d-none');
-        after.classList.add('d-block');
+    if (searchCross.classList.contains('d-none')) {
+        searchCross.classList.remove('d-block');
+        searchCross.classList.add('d-block');
     } else {
-        after.classList.remove('d-block');
-        after.classList.add('d-none');
+        searchCross.classList.remove('d-block');
+        searchCross.classList.add('d-none');
     }
+
 }
 

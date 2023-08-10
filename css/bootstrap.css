@@ -725,7 +725,6 @@ pre code {
   padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
-
 }
 
 .row {
@@ -934,6 +933,9 @@ pre code {
 .col-width{
   width: calc(100%/5);
   padding: 0 15px;
+}
+.col-width-25{
+  width: calc(100%/4);
 }
 
 .order-first {
