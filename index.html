@@ -26,11 +26,11 @@
             <div class="container-fluid">
                 <div class="container mh-88 pb-3 bg-white">
                     <div class="row d-flex flex-row p-3 justify-content-center align-items-center">
-                        <div class="col-auto logo">
+                        <div class="col-auto logo" id="logo">
                             <img src="./images/Hynt Beauty Logo1.svg" alt="hynt-beauty-logo" class="w-100 h-100">
                         </div>
 
-                        <nav class="navbar col header-link">
+                        <nav class="navbar col header-link" id="nav-links">
                             <ul class="navbar-nav d-flex flex-row justify-content-around flex-grow-1">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link"> BEST SELLERS</a>
@@ -116,8 +116,8 @@
                             </ul>
                         </nav>
                         <div class="col-auto header-icon d-flex flex-row justify-content-end">
-                            <a href="#" onclick="searchbox()">
-                                <img src="./images/search.svg" alt="search" class="d-block" id="search_icon">
+                            <a href="#"  onclick="searchbox()">
+                                <img src="./images/search.svg" alt="search" id="search_icon">
                                 <img src="./images/close.svg" class="h-100 w-100 d-none" id="search-x" alt="#">
                             </a>
                             <!-- <a href=""><img src="./images/search.svg" alt="search" onclick="toggleNav()"></a> -->
@@ -138,7 +138,7 @@
             </div>
             <div class="container-fluid ">
                 <div class="container">
-                    <div class="row d-flex flex-row p-3 justify-content-center align-items-center">
+                    <div class="row d-flex flex-row justify-content-center align-items-center mob-header">
                         <div class="col-4 d-flex justify-content-start col left-icon">
                             <div class="header-icon d-flex flex-row align-items-center">
                                 <a href="#" onclick="toggleNav()" id="menu-icon-link">
@@ -151,26 +151,28 @@
                             </div>
                         </div>
 
-                        <nav class="navbar pt-3" id="mobileNav">
-                            <ul class="px-4">
-                                <li class="pt-2 pb-3 nav-item"><a href="#">BEST SELLERS</a></li>
-                                <li class="pt-2 pb-3 nav-item"><a href="#">FACE</a></li>
-                                <li class="pt-2 pb-3 nav-item"><a href="#">LIPS</a></li>
-                                <li class="pt-2 pb-3 nav-item"><a href="#">SKINCARE</a></li>
-                                <li class="pt-2 pb-3 nav-item"><a href="#">BRUSHES</a></li>
-                                <li class="pt-2 pb-3 nav-item"><a href="#">SAMPLES</a></li>
-                                <li class="pt-2 pb-3 nav-item"><a href="#">SETS</a></li>
-                            </ul>
-                            <ul class="bg-menu-color px-4 mb-0 mob-nav-font pt-5">
-                                <li class="pt-0 pb-1"><a href="#">Our Story</a></li>
-                                <li class="pt-0 pb-1"><a href="#">Our Commitment</a></li>
-                                <li class="pt-0 pb-1"><a href="#">Ingredients</a></li>
-                                <li class="pt-0 pb-1"><a href="#">Help & FAQs</a></li>
-                                <li class="pt-0 pb-1"><a href="#">Contact Us </a></li>
-                                <li class="pt-0 pb-1"><a href="#">Loyalty Program</a></li>
-                                <li class="pt-0 pb-5"><a href="#">Store Locator</a></li>
-                            </ul>
-                        </nav>
+                        <div class="nav-overflow">
+                            <nav class="navbar pt-3" id="mobileNav">
+                                <ul class="px-4">
+                                    <li class="pt-2 pb-3 nav-item"><a href="#">BEST SELLERS</a></li>
+                                    <li class="pt-2 pb-3 nav-item"><a href="#">FACE</a></li>
+                                    <li class="pt-2 pb-3 nav-item"><a href="#">LIPS</a></li>
+                                    <li class="pt-2 pb-3 nav-item"><a href="#">SKINCARE</a></li>
+                                    <li class="pt-2 pb-3 nav-item"><a href="#">BRUSHES</a></li>
+                                    <li class="pt-2 pb-3 nav-item"><a href="#">SAMPLES</a></li>
+                                    <li class="pt-2 pb-3 nav-item"><a href="#">SETS</a></li>
+                                </ul>
+                                <ul class="bg-menu-color px-4 mb-0 mob-nav-font pt-5">
+                                    <li class="pt-0 pb-1"><a href="#">Our Story</a></li>
+                                    <li class="pt-0 pb-1"><a href="#">Our Commitment</a></li>
+                                    <li class="pt-0 pb-1"><a href="#">Ingredients</a></li>
+                                    <li class="pt-0 pb-1"><a href="#">Help & FAQs</a></li>
+                                    <li class="pt-0 pb-1"><a href="#">Contact Us </a></li>
+                                    <li class="pt-0 pb-1"><a href="#">Loyalty Program</a></li>
+                                    <li class="pt-0 pb-5"><a href="#">Store Locator</a></li>
+                                </ul>
+                            </nav>
+                        </div>
 
                         <div class="col-4 logo_img  px-1 align-items-center">
                             <div class="col-auto logo text-center">
@@ -205,9 +207,9 @@
                         </div>
                         <div class="search-icon aero">
                             <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="12" viewBox="0 0 15 15"
-                                    style="enable-background:new 0 0 15 15;" xml:space="preserve">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="15" height="12" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;"
+                                    xml:space="preserve">
                                     <path id="arrow-right" transform="translate(-10.75 -8.045)" fill="#9b6145" d="M20.4,21.7c-0.1,0-0.2,0-0.3-0.1c-0.2-0.2-0.2-0.5-0.1-0.7l4.2-4.9
 	H11.3c-0.3,0-0.5-0.2-0.5-0.5S11,15,11.3,15h12.9L20,10.2C19.8,10,19.8,9.6,20,9.5c0.2-0.2,0.5-0.2,0.7,0.1l4.9,5.7
 	c0.1,0.1,0.1,0.2,0.1,0.3l0,0c0,0,0,0,0,0c0,0,0,0,0,0v0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0l0,0
@@ -223,7 +225,7 @@
 
     <div class="container-fluid">
         <section class="banner">
-            <div class="container">
+            <div class="container max-width">
                 <div class="wrap-image">
                     <picture>
                         <source media="(min-width: 992px)" srcset="./images/Hynt_2b.png" />
@@ -232,11 +234,11 @@
                 </div>
 
                 <div class="wrap-text">
-                    <h1>Nature inspired colors.</h1>
-                    <h2 class="h2-font"> Science powered formulas.</h2>
-                    <p style="letter-spacing: 0px; padding-left: 40px;">
+                    <h1 class="h1-font">Nature inspired colors.
+                     <span class="span-font">Science powered formulas.</span></h1>
+                    <p style="letter-spacing: 0px;">
                         Our products are formulated with state-of-the-art, naturally-derived ingredients that are
-                        healthy for nature skin and conscientious of our planet.
+                        healthy for your skin and conscientious of our planet.
                     </p>
                     <a href="" class="btn btn-secondary btn-hover">SHOP OUR PRODUCTS</a>
                 </div>

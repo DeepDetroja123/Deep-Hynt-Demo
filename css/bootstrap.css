@@ -2986,10 +2986,16 @@ fieldset:disabled a.btn {
   /* border: 1px solid var(--black); */
 
 }
-.btn-hover{
+/* .btn-hover{
   margin-top: 29px;
   margin-right: 280px;
+} */
+.btn-hover{
+  margin-top: 20px;
+  margin-bottom: 39px;
+  /* margin-right: 280px; */
 }
+
 .btn-hover:hover{
   color: var(--copper);
 }
@@ -6868,7 +6874,7 @@ button.bg-dark:focus {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 2px solid var(--black) !important;
 }
 
 .border-left {
