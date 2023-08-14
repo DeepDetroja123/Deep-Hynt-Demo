@@ -342,8 +342,7 @@ input {
   font-size: 14px;
   line-height: 2;
   font-weight: normal;
-  padding: 14px 16px 14px 17px;
-  width: 322px;
+  width: 315px;
   border: 1px solid var(--black);
 }
 
@@ -3618,6 +3617,9 @@ fieldset:disabled a.btn {
   letter-spacing: 0.075em;
   color: var(--white);
   background-color: var(--antique-brass);
+}
+.btn-lg:hover{
+  background-color: var(--copper);
 }
 
 .btn-sm,

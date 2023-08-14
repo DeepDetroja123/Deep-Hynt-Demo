@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Bodoni Moda 9pt';
-    src: url('/fonts/stylesheet.css') format('woff2'),
+    src: url('./BodoniModa9pt-Medium.woff2') format('woff2'),
          url('./BodoniModa9pt-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
