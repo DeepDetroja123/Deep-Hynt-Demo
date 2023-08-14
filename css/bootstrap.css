@@ -41,6 +41,10 @@
   --black-400: #717171;
   --menu-bg-color:#FAF4F0;
   --mob-text-bg-color :#FFF2EA;
+  --radio-button-1: #E8A273; 
+  --radio-button-2: #9E6F73; 
+  --radio-button-3: #C8877C; 
+  --radio-button-4: #EAA07F; 
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -296,6 +300,19 @@ label {
 .bg-color-order{
   background-color: var(--almonds);
 }
+.bg-radio-btn-1{
+   background-color: var(--radio-button-1);
+}
+.bg-radio-btn-2{
+  background-color: var(--radio-button-2);
+}
+.bg-radio-btn-3{
+  background-color: var(--radio-button-3);
+}
+.bg-radio-btn-4{
+  background-color: var(--radio-button-4);
+}
+
 
 
 button {

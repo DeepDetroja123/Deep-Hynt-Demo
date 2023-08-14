@@ -25,6 +25,18 @@ function toggleNav() {
         hidden_class.style.left="-100%";
     }
 }
+//  function addImage(){
+//     var before_image = document.getElementById('first-image');
+//     var after_image = document.getElementById('second-image');
+    
+//      if(before_image.classList.contains('d-block')){
+//         before_image.classList.add('d-block');
+//         before_image.classList.add('d-none');
+//     }else{
+//         after_image.classList.remove('d-block');
+//         after_image.classList.add('d-none');
+//     }
+//  }
 
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 992) {
@@ -73,17 +85,17 @@ function searchbox() {
         searchIcon.classList.add('d-block');
         searchCross.classList.remove('d-block');
         searchCross.classList.add('d-none');
-       searchBox.style.top='-150%';
+       searchBox.style.top='-155%';
       
     }
 
-    if (searchCross.classList.contains('d-none')) {
-        searchCross.classList.remove('d-block');
-        searchCross.classList.add('d-block');
-    } else {
-        searchCross.classList.remove('d-block');
-        searchCross.classList.add('d-none');
-    }
+    // if (searchCross.classList.contains('d-none')) {
+    //     searchCross.classList.remove('d-block');
+    //     searchCross.classList.add('d-block');
+    // } else {
+    //     searchCross.classList.remove('d-block');
+    //     searchCross.classList.add('d-none');
+    // }
 
 }
 
