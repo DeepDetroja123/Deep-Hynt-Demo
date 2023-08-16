@@ -2,6 +2,7 @@ function toggleNav() {
     var before_class = document.getElementById("menu-icon-mobile");
     var after_class = document.getElementById("cancel-icon");
     var hidden_class = document.getElementById("mobileNav");
+    var overlay = document.getElementById("overlay");
 
 
     if (before_class.classList.contains('d-block')) {
@@ -18,25 +19,36 @@ function toggleNav() {
         after_class.classList.remove('d-none');
         after_class.classList.add('d-block');
         hidden_class.style.left="0";
+        overlay.classList.remove('d-none');
+        overlay.classList.add('d-block');
     }
     else {
         after_class.classList.remove('d-block');
         after_class.classList.add('d-none');
         hidden_class.style.left="-100%";
+        overlay.classList.remove('d-block');
+        overlay.classList.add('d-none');
     }
 }
-//  function addImage(){
-//     var before_image = document.getElementById('first-image');
-//     var after_image = document.getElementById('second-image');
-    
-//      if(before_image.classList.contains('d-block')){
-//         before_image.classList.add('d-block');
-//         before_image.classList.add('d-none');
-//     }else{
-//         after_image.classList.remove('d-block');
-//         after_image.classList.add('d-none');
-//     }
-//  }
+function addImage()
+{
+    var firstimage =document.getElementById('first-image');
+    var secondimage=document.getElementById('second-image');
+    if(firstimage.classList.contains('visible-block'))
+    {
+        firstimage.classList.remove('visible-block');
+        firstimage.classList.add('invisible-block');
+        secondimage.classList.remove('invisible-block');
+        secondimage.classList.add('visible-block');
+    }
+    else{
+        firstimage.classList.remove('invisible-block');
+        firstimage.classList.add('visible-block');
+        secondimage.classList.remove('visible-block');
+        secondimage.classList.add('invisible-block');
+    }
+
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 992) {

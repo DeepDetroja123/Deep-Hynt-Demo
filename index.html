@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-slide.css">
 
 </head>
 
 <body>
-    <header>
+    <header class="position-sticky top header-z-index bg-white">
         <div class="position-relative">
             <div class="container-fluid desktop">
                 <div class="col-12 header-title text-center justify-content-center align-items-center">
@@ -154,6 +155,7 @@
                             </div>
 
                             <div class="nav-overflow">
+                                <div class="overlay d-none" id="overlay"></div>
                                 <nav class="navbar pt-3" id="mobileNav">
                                     <ul class="px-4">
                                         <li class="pt-2 pb-3 nav-item"><a href="#">BEST SELLERS</a></li>
@@ -274,7 +276,7 @@
     </div>
 
 
-    <div class="container-fluid color">
+    <div class="container-fluid bg-alabaster">
         <div class="container">
             <div class="text-center d-flex flex-column align-items-center">
                 <div class="col-12 pt-4">
@@ -286,17 +288,17 @@
                         <span class="badge badge-padding">
                             New!
                         </span>
-                        <a href="#" class="image-container"><img src="./images/powderblush.png" alt="#"
-                                class="first-image" id="first-image">
-                            <img src="./images/AltoMattePowderBlush-SwatchExample.png" alt="" class="second-image"
-                                id="second-image">
+                        <a href="#" class="image-container">
+                            <img src="./images/powderblush.png" alt="#" class="first-image w-100 visible-block"
+                                id="first-image">
+                            <img src="./images/AltoMattePowderBlush-SwatchExample.png" alt=""
+                                class="second-image w-100 invisible-block" id="second-image">
                             <p class="beauty-head">ALTO Matte Powder Blush <span class="span-1">$29</span></p>
-                            <div class="image-text">
+                            <div class="position-relative">
                                 <p class="beauty-subline">Available in 4 shades</p>
                             </div>
-                            <div class="circle-radio">
+                            <div class="circle-radio position-absolute">
                                 <input type="radio" name="btn" class="bg-radio-1" id="" onclick="addImage()">
-                                <label for="radio-1"></label>
                                 <input type="radio" name="btn" class="bg-radio-2" id="">
                                 <input type="radio" name="btn" class="bg-radio-3" id="">
                                 <input type="radio" name="btn" class="bg-radio-4" id="">
@@ -552,12 +554,13 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid color">
+    <div class="container-fluid bg-alabaster">
         <div class="container">
-            <div class="row guuter col-12">
-                <div class="col-lg-4 col-4  d-flex pt-5 justify-content-center align-items-center text-center">
+            <div class="row flex-wrap">
+                <div class="col-lg-4 col-12  d-flex pt-5 justify-content-center align-items-center text-center">
                     <div class="sec-7-text">
                         <h2 class="sec-7-head">Who said <i>natural</i> had to be boring?</h2>
+                        <div class=""></div>
                         <p class="sec-7-desc pt-2 pb-5">
                             Our ARIA PURE lipsticks are for the bold, the bright & the beautiful. Luxuriously
                             creamy, deliciously hydrating, all packed with good-for-you ingredients.
@@ -565,22 +568,119 @@
                         <a href="" class="btn btn-lg">SHOP ARIA PURE LIPSTICKS</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-4 pt-5 pb-5">
-                    <img src="./images/Hynt_19d.png" alt="">
+                <div class="col-lg col-12 image-block">
+                    <div class="d-flex flex-row justify-content-between m-n15">
+                    <div class="col-9 col-lg-6 mob-padding pt-5 pb-5">
+                        <img src="./images/Hynt_19d.png" alt="" class="w-100 h-100">
+                    </div>
+                    <div class="col-9 col-lg-6 mob-padding pt-5 pb-5">
+                        <img src="./images/Hynt_3.png" alt="" class="w-100 h-100">
+                    </div>
                 </div>
-                <div class="col-lg-4 col-4 pt-5">
-                    <img src="./images/Hynt_3.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 
+    
+    <div
+    class="w-100 d-flex flex-column align-items-center text-center justify-content-center py-lg-5 py-5">
+    <div class="auto-text py-lg-5 mt-lg-1">
+        <div class="pb-lg-3 pb-3">
+            <p class="font-weight-normal">
+                IN THE PRESS
+            </p>
+        </div>
+        <div class="pb-lg-2">
+            <h3 style="font-weight: 500;">
+                “People are raving about this botanical-infused concealer for calming their cystic
+                acne.”
+            </h3>
+        </div>
+        <div class="d-flex justify-content-center pt-lg-4">
+            <div class="pt-4 mt-1 pb-2 pt-lg-0 pb-lg-3 mt-lg-0 mb-lg-1">
+                <a href="#"><img src="./images/Glamour Logo@2x.png" alt="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container py-lg-5 py-5 mb-lg-4">
+            <div class="image-content-overlay py-lg-4 py-2">
+                <div class="row ml-lg-5 flex-wrap position-relative">
+                    <div class="w-50 w-100 position-relative py-lg-0">
+                        <div class="position-relative py-lg-0 hyntimg" id="hyntimg">
+                            <a href="#"><img src="./images/Hynt_18@2x.png" alt="#"  class="h-100 w-100"></a>
+                            <div class="position-absolute">
+                                <a href="#"><img src="./images/Flower Icon@2x.png" alt="#" class="h-100 w-100"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        class="image-with-text w-48 d-flex flex-column justify-content-center align-items-center align-items-lg-end pb-3 px-4">
+                        <div class="text-center text-lg-left">
+                            <div class="pb-lg-1 pb-1 mt-3 mt-lg-0">
+                                <p>SKIN-HEALTHY NATURAL MAKEUP & ADVANCED SKIN CARE </p>
+                            </div>
+                            <div>
+                                <h3>Natural beauty brand you can fully <span class="font-italic"> trust & love.</span>
+                                </h3>
+                            </div>
+                            <div class="pb-lg-4 pb-4">
+                                <p class="font-weight-light"> We employ cutting-edge, clean ingredient technologies as
+                                    well as certified organic
+                                    ingredients
+                                    that are rich in antioxidants, skin-energizing vitamins and peptides to deliver
+                                    glowing
+                                    results while
+                                    being gentle on even the most sensitive skin types.</p>
+                            </div>
+                            <div class="mb-lg-1 pt-1 pt-lg-0">
+                                <p class="font-weight-light"> We are committed to educating you on how to best support a
+                                    feeling of healthy,
+                                    naturally
+                                    balanced skin,
+                                    so that you can feel confident and comfortable in your everyday beauty and lifestyle
+                                    choices.</p>
+                            </div>
+                            <div
+                                class="d-flex flex-row flex-wrap justify-content-center justify-content-lg-start pt-4">
+                                <div class="mr-sm-3 mb-3 mt-2 mt-sm-0 mb-sm-0">
+                                    <a href="" class="btn btn-primary">LEARN MORE</a>
+                                </div>
+
+                                <div class="position-relative text-center">
+                                    <a href="" class="btn btn-outline-dark">
+                                            OUR COMMITMENT</a>
+                                    <div class="position-absolute top my-2 ml-3">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"
+                                                viewBox="0 0 10 11">
+                                                <g id="play" transform="translate(-9 -7.879)">
+                                                    <path id="Path_160" data-name="Path 160"
+                                                        d="M17.505,13.379,10.25,9.262V17.5Zm.99-.851a.97.97,0,0,1,0,1.7l-7.954,4.514A1.024,1.024,0,0,1,9,17.893V8.865a1.024,1.024,0,0,1,1.541-.851Z"
+                                                        transform="translate(0)" fill-rule="evenodd" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
-
+    
     <script src="./js/index.js"></script>
-</body>
 
+</body>
 </html>
