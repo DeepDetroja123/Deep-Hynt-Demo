@@ -487,6 +487,9 @@ h6, .h6 {
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
+.letter-spacing{
+  letter-spacing: 0px;
+}
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -8258,7 +8261,9 @@ button.bg-dark:focus {
 .w-75 {
   width: 75% !important;
 }
-
+.w-auto{
+  width: auto !important;
+}
 .w-100 {
   width: 100% !important;
 }
@@ -8426,6 +8431,12 @@ button.bg-dark:focus {
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important;
+}
+.ml-n{
+  margin-left: -11px;
+}
+.ml-n13{
+  margin-left: -15px;
 }
 
 .mb-5,
@@ -9967,7 +9978,12 @@ button.bg-dark:focus {
 .font-weight-bold {
   font-weight: 700 !important;
 }
-
+.font-weight-medium{
+  font-weight: 500 !important;
+}
+.font-weight-semi-bold{
+  font-weight: 600 !important;
+}
 .font-italic {
   font-style: italic !important;
 }
