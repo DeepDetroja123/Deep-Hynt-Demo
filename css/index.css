@@ -19,10 +19,6 @@
     z-index: 99;
 }
 
-.top {
-    top: 0;
-}
-
 .btn-color {
     background-color: transparent;
 }
@@ -152,7 +148,9 @@ ul li {
 }
 
 .mob-header {
-    padding: 13px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #mobileNav {
@@ -164,7 +162,7 @@ ul li {
     z-index: 1;
     padding: 0;
     transition: 0.3s;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 96px);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -172,9 +170,7 @@ ul li {
     overflow-y: auto;
 }
 
-/* ::-webkit-scrollbar {
-    width: 20px;
-  } */
+
 #mobileNav ul:nth-child(2) {
     flex: 1;
 }
@@ -222,7 +218,7 @@ ul li {
 .nav-li ul li a {
     font-family: var(--font-family-karla);
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .header-icon #menu-icon-link {
@@ -284,7 +280,7 @@ ul li {
 }
 
 .right-icon {
-    margin-left: 19px;
+    /* margin-left: 19px; */
     padding-right: 0;
 }
 
@@ -384,7 +380,6 @@ ul li {
 }
 
 .marquee-container {
-
     overflow: hidden;
     width: 100%;
 }
@@ -409,7 +404,6 @@ ul li {
 }
 
 .marquee li+li::before {
-    /* content: "•"; Bullet point character */
     position: absolute;
     left: -15px;
     content: "•";
@@ -417,7 +411,6 @@ ul li {
 }
 
 .marquee li+li {
-    /* list-style-type: disc; */
     margin-left: 20px;
 }
 
@@ -461,16 +454,33 @@ ul li {
 }
 
 .beauty-subline {
+    margin-top: 5px;
     font-family: var(--font-family-karla);
     font-size: 13px;
     font-style: italic;
 
 }
-
-.aero-bg .aero-svg {
-    position: absolute;
-    right: 28px;
-    bottom: 358px;
+.m-n15{
+    margin: 0 -15px;
+}
+.swiper-button-n a{
+    top: var(--swiper-navigation-top-offset,50%);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    padding: 12px 17px;
+    height: 49px;
+    width: 49px;
+    transform: rotate(45deg);
+}
+.swiper-button-n a svg{
+    transform: rotate(319deg);
+}
+.swiper-button-p a{
+    top: var(--swiper-navigation-top-offset,50%);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
 }
 
 .text-center .row {
@@ -483,7 +493,7 @@ ul li {
 }
 
 .image-container:not(:hover) .btn-bag {
-    transform: translateY(105px);
+    transform: translateY(57px);
 }
 
 .image-container:hover .second-image,
@@ -512,9 +522,8 @@ ul li {
     height: 16px;
 }
 
-
 .col-3 svg {
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .btn-bag {
@@ -584,13 +593,6 @@ input[type=radio].bg-radio-4 {
     line-height: 1.26;
     font-weight: 500;
 
-}
-
-.col-lg-2 {
-    padding: 0px;
-    width: 95px;
-    height: 130px;
-    padding-bottom: 150px;
 }
 
 .btn-link-sec-6-margin {
@@ -719,10 +721,134 @@ input[type=radio].bg-radio-4 {
     line-height: 1.85;
     letter-spacing: 0.07em;
 }
-.max-315{
+
+.max-315 {
     max-width: 315px;
     margin-left: -10px;
 }
+
+.footer-section ul li a:hover {
+    color: black;
+}
+
+.about_us ul li:first-child,
+.customer-care ul li:first-child,
+.Discover-part ul li:first-child,
+.Subscribe-box ul li:first-child {
+    letter-spacing: 0;
+}
+
+.about_us ul li:not(:first-child),
+.customer-care ul li:not(:first-child),
+.Discover-part ul li:not(:first-child),
+.Subscribe-box ul li:not(:first-child),
+.Subscribe-box input::placeholder {
+    font-family: var(--font-family-Karla);
+    line-height: 2.4;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.Subscribe-box input {
+    padding: 10px 15px 10px 16px;
+    border: none;
+}
+
+.Subscribe-box ul li:nth-child(2) {
+    line-height: 1.67;
+}
+
+.footer-section ul li a:hover {
+    color: black;
+}
+
+.Subscribe-box input::placeholder {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.Subscribe-box p {
+    font-size: 12px;
+    line-height: 2.33;
+    letter-spacing: 0.05em;
+    color: var(--pantone);
+}
+
+.Subscribe-box .top {
+    top: 11px;
+}
+
+.Subscribe-box .right {
+    right: 10px;
+}
+
+.social-app div {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #D29C7D;
+}
+
+.Subscribe-box .social-app div a {
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+}
+
+.Subscribe-box .social-app div a img {
+    object-fit: contain;
+}
+
+.Subscribe-box .social-app div:hover {
+    background-color: #9B6A45;
+}
+
+.content-footer {
+    max-width: 354px;
+    border: 1px solid #CDB4A1;
+}
+
+.content-footer p {
+    font-size: 13px;
+    line-height: 1.69;
+    color: #9B6A45;
+    letter-spacing: 0;
+}
+
+.copiright-info span {
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 1.69;
+    font-family: var(--font-family-Karla);
+}
+
+#iframe_video {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 9999999;
+}
+
+#videoModal {
+    background-color: #F2DBCF;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    opacity: 0.7;
+}
+
+#closeButton {
+    border: none;
+    top: -59px;
+    right: -180px;
+}
+.offset{
+    margin-left: 30px;
+}
+
 
 
 @keyframes marquee {
@@ -877,6 +1003,10 @@ input[type=radio].bg-radio-4 {
         margin-top: 0px;
     }
 
+    .content-footer {
+        max-width: 750px;
+    }
+
 }
 
 
@@ -945,6 +1075,9 @@ input[type=radio].bg-radio-4 {
 
     .col-12 .sec-6-p {
         margin-left: 10%;
+    }
+    .offset{
+        margin-left: 0px;
     }
 }
 
@@ -1110,6 +1243,7 @@ input[type=radio].bg-radio-4 {
 
     .w-48 div div:last-child .position-relative button {
         padding: 18px 35px;
+        border: none;
     }
 
     #hyntimg::before {
@@ -1146,7 +1280,38 @@ input[type=radio].bg-radio-4 {
         max-height: 90px;
         max-width: 98px;
     }
+
+    .about_us ul li:not(:first-child),
+    .customer-care ul li:not(:first-child),
+    .Discover-part ul li:not(:first-child),
+    .Subscribe-box ul li:not(:first-child),
+    .Subscribe-box input::placeholder {
+        line-height: 2.28;
+        font-size: 14px;
+    }
+
+    .Subscribe-box {
+        max-width: 500px;
+    }
+
+    .content-footer {
+        max-width: 1150px;
+        border: 1px solid #CDB4A1;
+    }
+
+    .content-footer p {
+        font-size: 13px;
+        line-height: 1.64;
+    }
+    #videoModal{
+        background-color: #F2DBCF;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99999;
+        opacity: 0.7;
+   }
 }
+
 
 @media (min-width:1000px) {
 

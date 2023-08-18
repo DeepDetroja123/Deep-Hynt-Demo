@@ -125,6 +125,56 @@ function searchbox() {
     // }
 
 }
+function youtube_video() {
+
+    document.body.style.overflow = "hidden";
+    document.body.scrollTop;
+    // $("body").remove('position-static');
+    var model = document.getElementById('videoModal');
+    var modelContent = document.getElementById('model-content');
+    if (screen.width >= 992) {
+        modelContent.style.width = (screen.width / 2.4) + 40 + "px";
+        modelContent.style.height = (screen.height / 3) + 40 + "px";
+    }
+    else if(screen.width >=576)
+    {
+        modelContent.style.width = (screen.width) / 1.2  + "px";
+        modelContent.style.height = (screen.height / 2.3) + "px";
+    }
+    else {
+        modelContent.style.width = (screen.width - 20)  + "px";
+        modelContent.style.height = (screen.height / 4.01) + "px";
+    }
+    model.classList.remove('invisible-block');
+    model.classList.add('visible-block');
+    model.shadowRoot;
+}
+
+
+function closeModal() {
+    document.body.style.overflow = "visible";
+    // $("body").remove('noscroll');
+    var model = document.getElementById('videoModal');
+    model.classList.remove('visible-block');
+    model.classList.add('invisible-block');
+    model.shadowRoot;
+}
+
+
+var swiper = new Swiper('.mySwiper', {
+    slidesPerView: "auto",
+    loop:true,
+    navigation: {
+        nextEl: '.swiper-button-n',
+        prevEl: '.swiper-button-p',
+    },
+    breakpoints:{
+        992:{
+            slidesPerView:4,
+        },
+    },
+
+});
 
     var swiper = new Swiper(".newSwiper", {
         slidesPerView: image_band(),
@@ -151,13 +201,17 @@ function searchbox() {
         }
     });
     var image_swiper = new Swiper('.imageSlider', {
-        slidesPerView: 'auto',
+        slidesPerView: 2.5,
         loop: true,
         spaceBetween: 5,
         centeredSlides: true,
         slidesPerGroup: 1,
+        autoplay: true,
     
         breakpoints: {
+            1200:{
+                slidesPerView: 4.68,
+            },
             992: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
@@ -186,4 +240,5 @@ function searchbox() {
     });
 
     image_swiper.slideToLoop(image_swiper.slides.length, 0, false);
-    
+   
+  

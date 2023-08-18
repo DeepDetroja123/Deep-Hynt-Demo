@@ -304,9 +304,9 @@
   right: var(--swiper-navigation-sides-offset, 10px);
   left: auto;
 }
-.swiper-button-lock {
+/* .swiper-button-lock {
   display: none;
-}
+} */
 /* Navigation font start */
 .swiper-button-prev:after,
 .swiper-button-next:after {
