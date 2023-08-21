@@ -141,19 +141,32 @@
                     </p>
                 </div>
                 <div class="container-fluid ">
-                    <div class="container">
-                        <div class="row d-flex flex-row justify-content-center align-items-center mob-header">
-                            <div class="col-auto pl-0 d-flex flex-row justify-content-start left-icon">
+                    <div class="container py-2">
+                        <div class="row d-flex flex-row  align-items-center row-margin">
+                            <div class="col-4 pl-0 d-flex flex-row justify-content-start">
                                 <div class="header-icon d-flex flex-row align-items-center">
                                     <a href="#" onclick="toggleNav()" id="menu-icon-link">
-                                        <img src="./images/hamburger.svg" alt="#" class="d-block" id="menu-icon-mobile">
-                                        <img src="./images/close.svg" class="d-none" id="cancel-icon" alt="#">
+                                        <img src="./images/hamburger.svg" alt="#" class="h-100 w-100 d-block" id="menu-icon-mobile">
+                                        <img src="./images/close.svg" class="h-100 w-100 d-none" id="cancel-icon" alt="#">
                                     </a>
                                 </div>
                                 <div class="col header-icon icons">
                                     <a href="#"><img src="./images/account.svg" alt="Account"></a>
                                 </div>
                             </div>
+                            <div class="col-4 logo_img  px-1 align-items-center">
+                                <div class="col-auto logo text-center">
+                                    <img src="./images/Hynt Beauty Logo1.svg" alt="hynt-beauty-logo"
+                                        class="w-100 h-100">
+                                </div>
+                            </div>
+
+                            <div class="col-4 header-icon d-flex flex-row justify-content-end right-icon">
+                                <a href="#" class="mr-1"><img src="./images/search.svg" alt="search"></a>
+                                <a href="#" class="mr-1"><img src="./images/bag.svg" alt="bag"></a>
+                                <span class="bg-color-order rounded-circle zero text-center">0</span>
+                            </div>
+                        </div>
 
                             <div class="nav-overflow">
                                 <div class="overlay d-none" id="overlay"></div>
@@ -179,19 +192,8 @@
                                 </nav>
                             </div>
 
-                            <div class="col-4 logo_img  px-1 align-items-center">
-                                <div class="col-auto logo text-center">
-                                    <img src="./images/Hynt Beauty Logo1.svg" alt="hynt-beauty-logo"
-                                        class="w-100 h-100">
-                                </div>
-                            </div>
-
-                            <div class="col-4 header-icon d-flex flex-row justify-content-end right-icon">
-                                <a href="#"><img src="./images/search.svg" alt="search"></a>
-                                <a href="#"><img src="./images/bag.svg" alt="bag"></a>
-                                <span class="bg-color-order rounded-circle zero text-center">0</span>
-                            </div>
-                        </div>
+                           
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -209,7 +211,8 @@
                                 <input type="text" placeholder="Search" class="border-0 w-100">
                             </div>
                             <div class="col-1">
-                                <p>SEARCH</p>
+                                <a href=""><p>SEARCH</p></a>
+                                
                             </div>
                             <div class="search-icon aero">
                                 <a href="">
@@ -277,9 +280,9 @@
     </div>
 
 
-    <div class="container-fluid bg-alabaster">;
+    <div class="container-fluid bg-alabaster">
         <div class="container">
-            <div class="text-center text-left d-flex pt-lg-5  pt-5 pl-0 pr-0 pb-lg-1 pb-2 flex-column align-items-center">
+            <div class="text-center text-left d-flex pl-0 pr-0 pb-lg-1 pb-2 flex-column align-items-center" style="overflow: hidden;">
                 <div class="col-12 pt-4">
                     <h3>The Hynt Beauty <i>must-haves.</i></h3>
                 </div>
@@ -703,7 +706,7 @@
         <div class="container py-lg-5 mb-lg-4">
             <div class="image-content-overlay py-lg-4 py-2">
                 <div class="row ml-lg-5 flex-wrap position-relative">
-                    <div class="w-50 w-100 position-relative py-lg-0">
+                    <div class="w-50 w-100 position-relative py-lg-0 image-blog">
                         <div class="position-relative py-lg-0 hyntimg" id="hyntimg">
                             <a href="#"><img src="./images/Hynt_18@2x.png" alt="#" class="h-100 w-100"></a>
                             <div class="position-absolute">
@@ -713,8 +716,8 @@
 
                     </div>
                     <div
-                        class="image-with-text w-48 w-100 d-flex flex-column justify-content-center align-items-center align-items-lg-end pb-3 px-4">
-                        <div class="text-center text-lg-left ">
+                        class="image-with-text w-48 w-100 d-flex flex-column justify-content-center align-items-center align-items-lg-end pb-3">
+                        <div class="text-center text-lg-left image-content-mw">
                             <div class="pb-lg-1 pb-1 mt-3 mt-lg-0">
                                 <p>SKIN-HEALTHY NATURAL MAKEUP & ADVANCED SKIN CARE </p>
                             </div>
@@ -808,8 +811,7 @@
                     </picture>
                 </a>
                 <div
-                    class="position-absolute top w-100 px-3 pb-1 pb-lg-0 left d-flex flex-column justify-content-lg-center justify-content-end align-items-center text-center h-100">
-                    <div class="image-with-btns">
+                    class="position-absolute top w-100 px-3 image-with-btns-mw pb-1 pb-lg-0 left d-flex flex-column justify-content-lg-center justify-content-end align-items-center text-center h-100">
                         <div class="pb-lg-1 text-white mb-1 mb-lg-0 font-weight-normal">
                             <p>TREAT YOURSELF TODAY.</p>
                         </div>
@@ -820,34 +822,34 @@
                         </div>
                         <div
                             class="image-on-btn d-flex flex-row flex-wrap flex-lg-nowrap mt-lg-2 pt-lg-4  font-weight-bold">
-                            <div class="mr-lg-3 w-50 mb-3 mb-5 mb-lg-0 text-left text-sm-center">
+                            <div class="mr-lg-3 w-50 mb-3 mb-5 mb-lg-0  text-sm-center">
                                 <a href="" class="btn btn-secondary  bg-white font-weight-bold" id="btn-face"
                                     onmouseover="faceToggle()">
                                     FACE
                                 </a>
                             </div>
-                            <div class="mr-lg-3 w-50 mb-3 mb-lg-0 text-right text-sm-center">
+                            <div class="mr-lg-3 w-50 mb-3 mb-lg-0  text-sm-center">
                                 <a href="#" class="btn btn-secondary bg-white font-weight-bold" id="btn-eye"
                                     onmouseover="eyesToggle()">
 
                                     EYES
                                 </a>
                             </div>
-                            <div class="mr-lg-3 w-50 mb-4 pb-2 pb-lg-0 mb-lg-0 text-left text-sm-center">
+                            <div class="mr-lg-3 w-50 mb-4 pb-2 pb-lg-0 mb-lg-0  text-sm-center">
                                 <a href="#" class="btn btn-secondary  bg-white font-weight-bold" id="btn-lip"
                                     onmouseover="lipsToggle()">
 
                                     LIPS
                                 </a>
                             </div>
-                            <div class="w-50 mb-4 pb-2 pb-lg-0 mb-lg-0 text-right text-sm-center">
+                            <div class="w-50 mb-4 pb-2 pb-lg-0 mb-lg-0  text-sm-center">
                                 <a href="#" class="btn btn-secondary  bg-white font-weight-bold" id="btn-skincare"
                                     onmouseover="skinToggle()">
                                     SKINCARE
                                 </a>
                             </div>
                         </div>
-                    </div>
+                
                 </div>
             </div>
         </div>
@@ -873,37 +875,44 @@
     </section>
     <section class="container-fluid mb-1">
         <div class="swiper imageSlider">
-            <div class="swiper-wrapper d-flex">
-                <div class="swiper-slide w-auto">
+            <div class="swiper-wrapper d-flex" style="transition-timing-function: linear;">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl.png" alt="girl" class="h-100 w-100">
                     </a>
+                    
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl2.png" alt="girl" class="h-100 w-100"></a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl3.png" alt="girl" class="h-100 w-100"></a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl4.png" alt="girl" class="h-100 w-100"></a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl5.png" alt="girl" class="h-100 w-100"></a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl.png" alt="girl" class="h-100 w-100">
                     </a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl2.png" alt="girl" class="h-100 w-100"></a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl3.png" alt="girl" class="h-100 w-100"></a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl4.png" alt="girl" class="h-100 w-100"></a>
                 </div>
-                <div class="swiper-slide w-auto">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/girl5.png" alt="girl" class="h-100 w-100"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/girl5.png" alt="girl" class="h-100 w-100"></a>
+                </div>
+                <div class="swiper-slide">
                     <a href="#"><img src="./images/girl5.png" alt="girl" class="h-100 w-100"></a>
                 </div>
             </div>
@@ -1030,7 +1039,7 @@
 
 
 
-
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 

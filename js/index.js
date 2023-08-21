@@ -136,13 +136,12 @@ function youtube_video() {
         modelContent.style.width = (screen.width / 2.4) + 40 + "px";
         modelContent.style.height = (screen.height / 3) + 40 + "px";
     }
-    else if(screen.width >=576)
-    {
-        modelContent.style.width = (screen.width) / 1.2  + "px";
+    else if (screen.width >= 576) {
+        modelContent.style.width = (screen.width) / 1.2 + "px";
         modelContent.style.height = (screen.height / 2.3) + "px";
     }
     else {
-        modelContent.style.width = (screen.width - 20)  + "px";
+        modelContent.style.width = (screen.width - 20) + "px";
         modelContent.style.height = (screen.height / 4.01) + "px";
     }
     model.classList.remove('invisible-block');
@@ -163,82 +162,72 @@ function closeModal() {
 
 var swiper = new Swiper('.mySwiper', {
     slidesPerView: "auto",
-    loop:true,
+    loop: true,
     navigation: {
         nextEl: '.swiper-button-n',
         prevEl: '.swiper-button-p',
     },
-    breakpoints:{
-        992:{
-            slidesPerView:4,
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
         },
     },
 
 });
 
-    var swiper = new Swiper(".newSwiper", {
-        slidesPerView: image_band(),
-        loop: true,
-    });
+var swiper = new Swiper(".newSwiper", {
+    slidesPerView: image_band(),
+    loop: true,
+});
 
-    function image_band() {
-        if (screen.width >= 992)
-            return '2';
-        else
-            return 'auto';
+function image_band() {
+    if (screen.width >= 992)
+        return '2';
+    else
+        return 'auto';
 
+}
+var swiper = new Swiper(".content-swiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
     }
-    var swiper = new Swiper(".content-swiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        }
-    });
+});
+document.addEventListener("DOMContentLoaded", function () {
     var image_swiper = new Swiper('.imageSlider', {
-        slidesPerView: 2.5,
+        slidesPerView: "auto",
         loop: true,
         spaceBetween: 5,
-        centeredSlides: true,
-        slidesPerGroup: 1,
-        autoplay: true,
-    
-        breakpoints: {
-            1200:{
-                slidesPerView: 4.68,
-            },
-            992: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                centeredSlides: false,
-            },
+        speed: 5000,
+        autoplay: {
+            disableOnInteraction: false,
+            delay: 1,
         },
-    
-        onSlideChange: function () {
-            var activeIndex = image_swiper.realIndex;
-            var slideCount = image_swiper.slides.length;
-    
-            var loopedSlidesCount = slideCount; // Adjust this based on your slide count
-    
-            if (activeIndex === 0) {
-                image_swiper.slideToLoop(loopedSlidesCount, 0, false);
-            } else if (activeIndex >= loopedSlidesCount * 2) {
-                // This part is the key to moving right
-                var targetIndex = activeIndex - loopedSlidesCount;
-                image_swiper.slideToLoop(targetIndex, 0, false);
-            } else {
-                // This part is the key to moving left
-                var targetIndex = activeIndex + loopedSlidesCount;
-                image_swiper.slideToLoop(targetIndex, 0, false);
-            }
+
+        breakpoints: {
+            1200: {
+                slidesPerView: 5.68,
+            },
         },
     });
 
-    image_swiper.slideToLoop(image_swiper.slides.length, 0, false);
-   
-  
+    function startAutoplay() {
+        setInterval(function () {
+            if (!image_swiper.isBeginning) {
+                image_swiper.slidePrev();
+            } else {
+                image_swiper.slideTo(image_swiper.slides.length - 1);
+            }
+        }, image_swiper.params.speed);
+    }
+
+    startAutoplay();
+});
+
+
