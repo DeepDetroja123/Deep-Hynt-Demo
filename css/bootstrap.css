@@ -6899,7 +6899,7 @@ button.bg-dark:focus {
 }
 
 .border-bottom {
-  border-bottom: 2px solid var(--black) !important;
+  border-bottom: 1px solid var(--black) !important;
 }
 
 .border-left {
@@ -8592,6 +8592,11 @@ button.bg-dark:focus {
 .pb-5,
 .py-5 {
   padding-bottom: 3rem !important;
+}
+
+.pad-5{
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .pl-5,

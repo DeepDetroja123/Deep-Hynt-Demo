@@ -6,6 +6,7 @@
 .header-title {
     background-color: var(--antique-brass);
     color: var(--white);
+    z-index: 10;
 }
 
 .logo {
@@ -455,7 +456,7 @@ ul li {
 
 }
 .m-n15{
-    margin: 0 -15px;
+    margin-left: 10px;
 }
 .swiper-button-n{
     top: var(--swiper-navigation-top-offset,50%);
@@ -628,7 +629,7 @@ input[type=radio].bg-radio-4 {
 
 .auto-text div p,
 .auto-text div p,
-.w-48 div div:first-child p {
+.w-46 div div:first-child p {
     font-size: 14px;
     line-height: 1.85;
     letter-spacing: 0.07em;
@@ -651,9 +652,13 @@ input[type=radio].bg-radio-4 {
     left: -2%;
     height: 117%;
     width: 52%;
-    z-index: -1;
+    z-index: 1;
     background-color: var(--champaginepink-200);
     border-radius: 0 50px;
+}
+#hyntimg a img{
+    position: relative;
+    z-index: 2;
 }
 
 .w-50 div.position-relative {
@@ -661,7 +666,7 @@ input[type=radio].bg-radio-4 {
 }
 
 .w-50 div.position-relative div {
-    height: 184px;
+    height: 180px;
     width: 119px;
     bottom: -89px;
     left: -24px;
@@ -672,7 +677,7 @@ input[type=radio].bg-radio-4 {
     margin-left: 22px;
 }
 .image-with-text{
-    max-width: 850px;
+    /* max-width: 850px; */
     margin: 20px;
 }
 
@@ -684,7 +689,7 @@ input[type=radio].bg-radio-4 {
     max-width: 315px;
 }
 
-.w-48 div div:first-child p {
+.w-46 div div:first-child p {
     padding-top: 25px;
     color: var(--copper);
 }
@@ -760,7 +765,8 @@ input[type=radio].bg-radio-4 {
     font-size: 12px;
     line-height: 2.33;
     letter-spacing: 0.05em;
-    color: var(--pantone);
+    color: var(--copper);
+
 }
 
 .Subscribe-box .top {
@@ -792,6 +798,12 @@ input[type=radio].bg-radio-4 {
 .Subscribe-box .social-app div:hover {
     background-color: #9B6A45;
 }
+.copiright-info span {
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 1.69;
+    font-family: var(--font-family-Karla);
+}
 
 .content-footer {
     max-width: 354px;
@@ -803,21 +815,6 @@ input[type=radio].bg-radio-4 {
     line-height: 1.69;
     color: #9B6A45;
     letter-spacing: 0;
-}
-
-.copiright-info span {
-    font-size: 13px;
-    letter-spacing: 0;
-    line-height: 1.69;
-    font-family: var(--font-family-Karla);
-}
-
-#iframe_video {
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-    width: 100%;
-    opacity: 9999999;
 }
 
 #videoModal {
@@ -833,6 +830,14 @@ input[type=radio].bg-radio-4 {
 }
 .offset{
     margin-left: 30px;
+}
+
+#iframe_video {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 9999999;
 }
 
 
@@ -926,9 +931,9 @@ input[type=radio].bg-radio-4 {
         display: none !important;
     }
 
-    .max-widths {
+    /* .max-widths {
         max-width: 760px;
-    }
+    } */
     .wrap-text {
         aspect-ratio: 1.4;
         text-align: center;
@@ -945,7 +950,11 @@ input[type=radio].bg-radio-4 {
         font-size: 35px;
 
     }
-    .w-48 div div:first-child p {
+    .w-46 div {
+        max-width: none;
+        letter-spacing: 0;
+    }
+    .w-46 div div:first-child p {
         max-width: 560px;
     }
     .col-12 .sec-6-p {
@@ -1040,7 +1049,7 @@ input[type=radio].bg-radio-4 {
     .offset{
         margin-left: 0px;
     }
-    .w-48 div div:first-child p {
+    .w-46 div div:first-child p {
         max-width: 780px;
     }
 }
@@ -1180,7 +1189,7 @@ input[type=radio].bg-radio-4 {
     }
 
     .auto-text div p,
-    .w-48 div div:first-child p {
+    .w-46 div div:first-child p {
         font-size: 15px;
         line-height: 1.73;
     }
@@ -1194,23 +1203,23 @@ input[type=radio].bg-radio-4 {
     }
 
     .w-50 {
-        width: 52% !important;
+        width: 47% !important;
     }
 
-    .w-48 {
+    .w-46 {
         width: 46% !important;
     }
 
-    .w-48 div {
+    .w-46 div {
         max-width: 550px;
         letter-spacing: 0;
     }
 
-    .w-48 div div:last-child .position-relative button {
+    .w-46 div div:last-child .position-relative button {
         padding: 18px 35px;
         border: none;
     }
-    .w-48 div div:first-child p {
+    .w-46 div div:first-child p {
         padding-top: 0px;
     }
     #hyntimg::before {
@@ -1225,7 +1234,7 @@ input[type=radio].bg-radio-4 {
     .w-50 div.position-relative div {
         height: 231px;
         width: 209px;
-        bottom: -112px;
+        bottom: -103px;
         left: -115px;
     }
 
@@ -1234,7 +1243,7 @@ input[type=radio].bg-radio-4 {
         aspect-ratio: 1.427;
     }
 
-    .w-48 div div:first-child p {
+    .w-46 div div:first-child p {
         max-width: 440px;
     }
 
@@ -1261,7 +1270,8 @@ input[type=radio].bg-radio-4 {
     }
 
     .Subscribe-box {
-        max-width: 500px;
+        max-width: 471px;
+        margin-left: 20px;
     }
 
     .content-footer {
@@ -1273,11 +1283,6 @@ input[type=radio].bg-radio-4 {
         font-size: 13px;
         line-height: 1.64;
     }
-    #videoModal{
-        background-color: #F2DBCF;
-        width: 100vw;
-        height: 100vh;
-   }
 }
 
 
